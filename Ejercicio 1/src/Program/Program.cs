@@ -7,11 +7,14 @@ namespace SRP
     {
         static void Main()
         {
-            Book book1 = new Book("Design Patterns","Erich Gamma & Others","001-034");
-            Book book2 = new Book("Pro C#","Troelsen","001-035");
-            book1.ShelveBook("A","7");
-            book2.ShelveBook("B","3");
+            WhichBook book1 = new WhichBook("Design Patterns","Erich Gamma & Others");
+            WhichBook book2 = new WhichBook("Pro C#","Troelsen");
 
+            Identifier bookId1 = new Identifier("001-034");
+            Identifier bookId2 = new Identifier("001-035");
+            
+            ShelveBook bookShelve1 = new ShelveBook("A","7");
+            ShelveBook bookShelve2 = new ShelveBook("B","3");
         }
     }
 }
